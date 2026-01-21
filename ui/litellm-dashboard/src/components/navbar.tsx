@@ -186,47 +186,15 @@ const Navbar: React.FC<NavbarProps> = ({
               <Link href={baseUrl ? baseUrl : "/"} className="flex items-center">
                 <div className="relative">
                   <img src={imageUrl} alt="LiteLLM Brand" className="h-10 w-auto" />
-                  <span
-                    className="absolute -top-1 -right-2 text-lg animate-bounce"
-                    style={{ animationDuration: "2s" }}
-                    title="Happy Holidays!"
-                  >
-                    🎄
-                  </span>
+                  
                 </div>
               </Link>
-              {version && (
-                <a
-                  href="https://docs.litellm.ai/release_notes"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-gray-500 border border-gray-200 rounded-lg px-2 py-0.5 bg-gray-50 font-medium -ml-2 hover:bg-gray-100 transition-colors cursor-pointer z-10"
-                >
-                  v{version}
-                </a>
-              )}
+              
             </div>
           </div>
           {/* Right side nav items */}
           <div className="flex items-center space-x-5 ml-auto">
-            <Button
-              href="https://www.litellm.ai/support"
-              target="_blank"
-              rel="noopener noreferrer"
-              icon={<SlackOutlined />}
-              className="shadow-md shadow-indigo-500/20 hover:shadow-indigo-500/50 transition-shadow"
-            >
-              Join Slack
-            </Button>
-            <Button
-              href="https://github.com/BerriAI/litellm"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shadow-md shadow-indigo-500/20 hover:shadow-indigo-500/50 transition-shadow"
-              icon={<GithubOutlined />}
-            >
-              Star us on GitHub
-            </Button>
+           
             <a
               href="https://docs.litellm.ai/docs/"
               target="_blank"
